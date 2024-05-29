@@ -4,13 +4,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
+main {
   margin-top: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-h1{
+h1 {
   /*text-align: center;*/
   color: #732104;
   font-size: 2.7rem;
@@ -54,26 +54,26 @@ navbar {
   width: auto;
   padding-right: 1.2rem;
 }
-.cardList{
+.cardList {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.card{
-  background-color: #FEF7E2;
-  width:48%;
+.card {
+  background-color: #fef7e2;
+  width: 48%;
   margin-top: 2.2rem;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
   color: #732104;
 }
-.card img{
+.card img {
   border-radius: 50px 50px 0px 0px;
 }
 
-.cardBtn{
-  background-color: #FFDF7F;
+.cardBtn {
+  background-color: #ffdf7f;
   border: 0;
   border-radius: 40px;
   padding-top: 0.5rem;
@@ -86,44 +86,43 @@ navbar {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.cardDescr{
+.cardDescr {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 1rem;
-  
 }
-.cardDescr h3{
+.cardDescr h3 {
   font-weight: 700;
   font-size: 1.3rem;
   line-height: 1.8rem;
 }
 
-.cardDescr h4{
+.cardDescr h4 {
   font-size: 1.2rem;
 }
-article{
+article {
   margin-top: 4rem;
 }
-article h2{
+article h2 {
   color: #732104;
   font-size: 2.4rem;
   font-weight: 900;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
-.articleContent{
-  background-color: #FEF7E2;
+.articleContent {
+  background-color: #fef7e2;
   padding: 1rem;
   border-radius: 40px;
 }
-.articleContent h3{
+.articleContent h3 {
   color: #732104;
   font-size: 1.6rem;
   font-weight: 900;
-  margin-top:0.5rem ;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
-.articleContent p{
+.articleContent p {
   color: #732104;
   font-weight: 500;
   font-size: 1.1rem;
@@ -131,10 +130,90 @@ article h2{
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 300px) and (max-width: 599px) {
+  navbar {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 80px;
+    flex-wrap: wrap;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3.2rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .navBtn {
+    width: 40%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 2rem;
+  }
+  .navShop {
+    order: -1;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+  }
+  .cardBtn {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+  }
+  article h2 {
+    text-align: center;
+  }
+}
 
-/*  @font-face {
-    font-family: 'Familiar Pro Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Familiar Pro Bold'), url('Familiar_Pro-Bold.woff') format('woff');
-    }*/
+@media screen and (min-width: 1200px) {
+  body {
+    flex-direction: row;
+  }
+  navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+  .navBtn {
+    width: 20vh;
+    height: 10vw;
+    margin-bottom: 2rem;
+  }
+  .navShop {
+    justify-content: center;
+    order: -1;
+  }
+  main {
+    margin-left: 2.8rem;
+  }
+  .cardList {
+    flex-wrap: nowrap;
+  }
+  .card {
+    width: 23%;
+  }
+  .cardDescr {
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    
+  }
+  .cardDescr h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.3rem;
+  }
+  .cardDescr h4{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .cardDescr p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .cardDescr:first-child {
+    text-align: center;
+  }
+}
