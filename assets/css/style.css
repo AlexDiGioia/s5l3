@@ -99,6 +99,35 @@ navbar {
   line-height: 1.4rem;
 }
 
+article{
+  margin-top: 4rem;
+}
+article h2{
+  color: #732104;
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.articleContent{
+  background-color: #FEF7E2;
+  padding: 1rem;
+  border-radius: 40px;
+}
+.articleContent h3{
+  color: #732104;
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-top:0.5rem ;
+  margin-bottom: 1.5rem;
+}
+.articleContent p{
+  color: #732104;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+}
+
 
 /*  @font-face {
     font-family: 'Familiar Pro Bold';
